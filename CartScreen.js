@@ -24,7 +24,6 @@ export default class CartScreen extends Component {
           data={this.state.cart}
           keyExtractor={(item, index) => item+index}
           renderItem={({item}) => {
-            item.price = item.price*item.quantity;
             return (
               <View style={styles.listItem}>
                 <Image
